@@ -19,15 +19,17 @@ article{
     display: flex;
     justify-content: center;
     padding-top: 3rem;
-    margin-bottom: 3rem;
-    margin: auto;
-    display: flex;
-    width: 50%;
-    height: 35rem;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
 }
 nav{
 height: 100%;
 margin-right: 3rem;
+flex-basis: 50%;
+flex-shrink: 2;
 }
 nav>a{
     text-shadow: 2px 2px black;
@@ -37,7 +39,6 @@ nav>a{
     font-size: x-large;
     padding: 1rem;
     border: 5px black solid;
-    flex-basis: 50%;
     margin: 0.5rem;
 }
 nav>a:visited{
@@ -58,6 +59,7 @@ nav>a:hover{
     text-shadow: 2px 2px black;
     border: 5px black solid;
     margin-left: 3rem;
+    flex-shrink: 1;
 }
 section>a{
     font-size: x-large;
@@ -66,12 +68,15 @@ section>a{
 .bad{
     width: 50%;
     height: 50%;
+    padding-top: 1rem;
+}
+input{
+    color: black;
 }
 footer{
     width: 100%;
     background-color: #660000;
-    position: sticky;
-    bottom: 0px;
+
 }
 .footerFormat{
     display: flex;
@@ -82,4 +87,17 @@ footer{
 footer>div>a{
     padding-top: 2px;
     height: 100%;
+}
+@media (max-width<500px){
+    nav{
+        height: 100%;
+        margin-right: 2px;
+        }
+    .extraText{
+            font-size: large;
+            flex-basis: 50%;
+            text-shadow: 2px 2px black;
+            border: 5px black solid;
+            margin-left: 1rem;
+        }
 }
